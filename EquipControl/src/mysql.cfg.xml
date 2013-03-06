@@ -1,0 +1,23 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+       <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">2355grupo</property>
+        <property name="hibernate.connection.url">jdbc:mysql://127.0.0.1:3306/equipControl?autoReconnect=true</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="show_sql">false</property>
+        <property name="format_sql">false</property>
+       
+        <!--  Map of Entities -->
+        <!--  EX.: <mapping class="br.com.YOURPROJECT.model.YOURCLASS" /> -->      
+         <mapping class="br.com.grupoperaltas.equipcontrol.models.Usuario" />
+         <mapping class="br.com.grupoperaltas.equipcontrol.models.Fabricante" />
+         <mapping class="br.com.grupoperaltas.equipcontrol.models.Modelo" />
+         <mapping class="br.com.grupoperaltas.equipcontrol.models.LocalFisico" />
+         <mapping class="br.com.grupoperaltas.equipcontrol.models.Equipamento" />
+    </session-factory>
+</hibernate-configuration>

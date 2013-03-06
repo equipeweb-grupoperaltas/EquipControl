@@ -1,0 +1,245 @@
+@CHARSET "UTF-8";
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #f2f2f2;
+	font-family: sans-serif;
+	font-size: 14px;
+}
+
+section {
+	margin: 0;
+	padding: 0;
+}
+
+#conteudo {
+	width: 80%;
+	margin-top: 10px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* CABECALHO */
+#cabecalho {
+	background-image: url(../images/fd_cab.jpg);
+	height: 75px;
+	width: 100%;
+}
+
+#cabecalho .logo {
+	width: 309px;
+	height: 70px;
+	margin-left: 25px;
+	float: left;
+	padding-top: 5px;
+}
+
+#cabecalho .userLogado {
+	width: 307px;
+	height: 85px;
+	margin-top: -10px;
+	background-image: url(../images/fd_user.png);
+	margin-left: 60px;
+	float: left;
+	background-repeat: no-repeat;
+}
+
+#cabecalho .userLogado p {
+	font-size: 12px;
+	color: #666;
+	margin-left: 40px;
+}
+
+form {
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+	padding: 20px;
+	background: #f0f0f0;
+	overflow: auto;
+	/* Border style */
+	border: 1px solid #cccccc;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+	/* Border Shadow */
+	-moz-box-shadow: 2px 2px 2px #cccccc;
+	-webkit-box-shadow: 2px 2px 2px #cccccc;
+	box-shadow: 2px 2px 2px #cccccc;
+}
+
+label {
+	font-family: Arial, Verdana;
+	text-shadow: 2px 2px 2px #ccc;
+	display: block;
+	float: left;
+	margin-right: 15px;
+	font-weight: bold;
+	margin-right: 10px;
+	text-align: right;
+	width: 120px;
+	line-height: 25px;
+	font-size: 15px;
+}
+
+.input {
+	font-family: Arial, Verdana;
+	font-size: 15px;
+	padding: 5px;
+	border: 1px solid #b9bdc1;
+	width: 300px;
+	color: #797979;
+}
+
+.hint {
+	display: none;
+}
+
+.field:hover .hint {
+	position: absolute;
+	display: block;
+	margin: -30px 0 0 455px;
+	color: #FFFFFF;
+	padding: 7px 10px;
+	background: rgba(0, 0, 0, 0.6);
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+}
+
+.button {
+	float: right;
+	margin-left: 15px;
+	margin: 10px 55px 10px 0;
+	font-weight: bold;
+	line-height: 1;
+	padding: 6px 10px;
+	cursor: pointer;
+	color: #fff;
+	text-align: center;
+	text-shadow: 0 -1px 1px #64799e;
+	/* Background gradient */
+	background: #396396;
+	background: -moz-linear-gradient(top, #396396 0%, #2576a9 100%);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#396396),
+		to(#2576a9) ); to (#7089b3) );
+	/* Border style */
+	border: 1px solid #396396;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	/* Box shadow */
+	-moz-box-shadow: inset 0 1px 0 0 #aec3e5;
+	-webkit-box-shadow: inset 0 1px 0 0 #aec3e5;
+	box-shadow: inset 0 1px 0 0 #aec3e5;
+}
+
+/***
+MENU
+**/
+#menu-interno {
+	margin: 0;
+	padding: 0;
+	height: 60px;
+	margin-top: -14px;
+	margin-bottom: 10px;
+	/* Background gradient */
+	background: #396396;
+	background: -moz-linear-gradient(top, #396396 0%, #2576a9 100%);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#396396),
+		to(#2576a9) );
+}
+
+#menu-interno ul {
+	list-style: none;
+}
+
+#menu-interno ul li {
+	float: left;
+	margin-left: 16px;
+	margin-right: 5px;
+	text-align: center;
+	padding-top: 15px;
+	padding-left: 15px;
+	font-size: 12px;
+	border-left: 1px;
+	border-left-style: dashed;
+	border-left-color: #333;
+	height: 45px;
+}
+
+#menu-interno ul li a {
+	text-decoration: none;
+	color: #fff;
+}
+
+#menu-interno ul li a:hover {
+	color: #a8a335;
+}
+
+#menu-interno ul li a p {
+	margin: 0;
+	padding: 0;
+}
+
+#menu-interno ul li a img {
+	vertical-align: middle;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+/* RODAPE */
+#rodape {
+	background-image: url(../images/fd_cab.jpg);
+	height: 20px;
+	width: 100%;
+}
+
+#rodape p {
+	text-align: center;
+	color: #666;
+}
+
+/**** TABELA INICIO ***/
+#monitora {
+	width: 80%;
+}
+
+#monitora thead {
+	border: 0;
+	background-image:
+		url("../stylesheet/jqueryUi/redmond/images/ui-bg_gloss-wave_55_5c9ccc_500x100.png");
+	background-position: 3%;
+	height: 30px;
+	color: #fff;
+	-webkit-border-top-left-radius: 8px;
+	-webkit-border-top-right-radius: 8px;
+	-moz-border-radius-topleft: 8px;
+	-moz-border-radius-topright: 8px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+#monitora thead tr {
+	border: 1px #333 solid;
+	height: 30px;
+	-webkit-border-top-left-radius: 8px;
+	-webkit-border-top-right-radius: 8px;
+	-moz-border-radius-topleft: 8px;
+	-moz-border-radius-topright: 8px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+#monitora tbody tr{
+	height: 25px;
+}
+#monitora tbody tr td{
+	margin-top:5px;
+	text-align: center;
+	font-size: 14px;
+}
+
+#monitora tbody tr:nth-child(2n+1) { background: #c5dbec; } 
